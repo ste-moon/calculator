@@ -1,0 +1,76 @@
+/* Basic reset */
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f0f0f0;
+  font-family: Arial, sans-serif;
+}
+
+/* Calculator container */
+.calculator {
+  width: 320px;               /* Fixed width */
+  height: 420px;              /* Fixed height */
+  background-color: #B4EBE6;
+  border: 2px solid #000;
+  border-radius: 30px;        /* Rounded corners to match sketch */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+}
+
+/* Display area */
+.display {
+  width: 90%;
+  height: 60px;
+  background: #222;
+  color: #fff;
+  text-align: right;
+  font-size: 2em;
+  padding: 10px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  overflow: hidden; /* In case text is large */
+}
+
+/* Each row of buttons */
+.row {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  margin-bottom: 10px;
+}
+
+/* Button styling */
+.key {
+  flex: 1;
+  margin: 0 3px;              /* Small horizontal gap between buttons */
+  padding: 15px;
+  font-size: 1.2em;
+  background: #FBF8EF;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.1s;
+}
+
+.operator {
+  background-color: #FFB433;
+}
+
+.top {
+  background-color: #F8F5E9;
+}
+
+.key:active {
+  background: #ccc;
+}
